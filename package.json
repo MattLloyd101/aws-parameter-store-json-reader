@@ -1,0 +1,37 @@
+{
+  "name": "aws-parameter-store-json-reader",
+  "version": "1.0.0",
+  "description": "A library that reads JSON from AWS Parameter Store.",
+  "main": "src/AwsParameterStoreJsonReader.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattLloyd101/aws-parameter-store-json-reader.git"
+  },
+  "keywords": [
+    "aws",
+    "parameter",
+    "store",
+    "json"
+  ],
+  "author": "Matthew Lloyd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattLloyd101/aws-parameter-store-json-reader/issues"
+  },
+  "homepage": "https://github.com/MattLloyd101/aws-parameter-store-json-reader#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "sinon": "^7.1.1",
+    "sinon-chai": "^3.2.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.359.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
