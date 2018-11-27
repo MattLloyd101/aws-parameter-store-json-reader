@@ -215,8 +215,15 @@ describe('AwsParameterStoreJsonReader', () => {
             const response = fakeResponse([
                 ["/prefix/dev/db/username", "String", "dev-user"],
                 ["/prefix/dev/db/password", "SecureString", "secret-password"],
+                ["/prefix/dev/tags", "StringList", "dev,database"],
+                ["/prefix/dev/ids", "StringList", "12,42,128"],
+                ["/prefix/dev/objs/0/entry", "String", "1"],
+                ["/prefix/dev/objs/1/entry", "String", "2"],
+                ["/prefix/dev/objs/2/entry", "String", "3"],
+                
                 ["/prefix/prod/db/username", "String", "prod-user"],
                 ["/prefix/prod/db/password", "SecureString", "super-secret-password"],
+                
             ]);
             const fake = { getParametersByPath: sinon.fake.yields(null, response) };
             await withSSMStub(fake, async (stub, ssm) => {
@@ -228,7 +235,10 @@ describe('AwsParameterStoreJsonReader', () => {
                         "db": {
                             "username": "dev-user",
                             "password": "secret-password"
-                        }
+                        },
+                        "tags": ["dev", "database"],
+                        "ids": ["12", "42", "128"],
+                        "objs": [{ "entry": "1" }, { "entry": "2" }, { "entry": "3" }]
                     },
                     "prod": {
                         "db": {
