@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '8.10'
+deploy:
+  provider: npm
+  email: Matt.Lloyd101@gmail.com
+  api_key:
+    secure: d6dpwESTC/SHDVCeuNXW0/zi2XgyrNOczTe7gOau/0fMj/ZyWV/QykEw/2tNc0aKHHnpMIE279pnScbt3JoTX+IniwsJ7AOR4YPJQiavLsHMxABkFYjmyO1donTgYJH/DhyoRUJ8P/mL5jBYnVsHs/NAM+/oC8NoIWeOR2FzQ68WXTbBwvSW+FF805y5mfSN74swP1Ll8b4RI63MDBNov3yKIJTNLOQE4rpExCYWUlTiHG88TkKFEi15sGvwqu+6fflzVjF2DBC2N8sNh9dP4xXzwbXhxge5Z6xElQ2xfpSKjTcv6iIoWLIw7Xx7I0C1243oZwVzHh3Luuy7QoDxSv5bX50qO3BspHzrgZPIaOimYaBOey6kcOrJzLaYITHL5fxduqlcGQ0i+XagjUGUOzpkbKxb7gM5QAmmU8hguspKNGlDtAhd1wiW+naoagsEXIf/KWOITXzl1Bc/FU2gs5f29siDnPnvRNN2Ylh+LKUF3eoI16QG6fyAh81YQqNW88Y9Y/fZb3C5LQnZWcBcJFyqNH3ZotYWCWoCoqWbDZNKvRxvX9x4Zq758vAIC3R6WWkMmtbliqQNlcePW7lpB8QDvGk/EdGqdV8ZA0+eIdRDqqy+lYo9S/R5MsX3lCEXmGKqHKzV5SuaPietmLFQ58ncL5QtUC9WBXPHBrehYiw=
+  on:
+    tags: true
+    repo: MattLloyd101/aws-parameter-store-json-writer
