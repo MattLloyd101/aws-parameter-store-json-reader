@@ -252,4 +252,4 @@ describe('AwsParameterStoreJsonReader', () => {
         });
     });
 
-});    
+});
