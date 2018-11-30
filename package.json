@@ -1,6 +1,6 @@
 {
   "name": "aws-parameter-store-json-reader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that reads JSON from AWS Parameter Store.",
   "main": "src/AwsParameterStoreJsonReader.js",
   "scripts": {

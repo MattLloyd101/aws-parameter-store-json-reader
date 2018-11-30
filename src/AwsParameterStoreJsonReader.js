@@ -7,9 +7,9 @@ module.exports = class AwsParameterStoreJsonReader {
 
     constructor(configuration) {
         this.configuration = configuration;
-        const apiVersion = configuration ? configuration.apiVersion : undefined;
+        const ssmConfig = configuration ? { "apiVersion": configuration.apiVersion } : undefined;
 
-        this.ssm = new AWS.SSM(apiVersion);
+        this.ssm = new AWS.SSM(ssmConfig);
         this.ssm.getParametersByPathAsync = promisify(this.ssm.getParametersByPath);
     }
 

@@ -77,7 +77,7 @@ describe('AwsParameterStoreJsonReader', () => {
                 const parameterReader = new AwsParameterStoreJsonReader(configuration);
 
                 expect(stub).to.have.been.calledWithNew;
-                expect(stub.getCall(0).args[0]).to.be.equal(configuration.apiVersion);
+                expect(stub.getCall(0).args[0]).to.be.eql({ "apiVersion": configuration.apiVersion });
                 expect(parameterReader.ssm).to.be.equal(ssm);
             });
         });
