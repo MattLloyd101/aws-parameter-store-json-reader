@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/MattLloyd101/aws-parameter-store-json-reader.svg?branch=master)](https://travis-ci.org/MattLloyd101/aws-parameter-store-json-reader)
 [![npm version](https://badge.fury.io/js/aws-parameter-store-json-reader.svg)](https://badge.fury.io/js/aws-parameter-store-json-reader)
+[![dependencies Status](https://david-dm.org/MattLloyd101/aws-parameter-store-json-reader/status.svg)](https://david-dm.org/MattLloyd101/aws-parameter-store-json-reader)
+[![devDependencies Status](https://david-dm.org/MattLloyd101/aws-parameter-store-json-reader/dev-status.svg)](https://david-dm.org/MattLloyd101/aws-parameter-store-json-reader?type=dev)
 
 A Node.js library that reads JSON from AWS Parameter Store.
 
